@@ -3,118 +3,592 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#071321">
-  <meta name="description" content="Rijvee Elegance - কসমেটিকস, জুয়েলারি, ব্যাগ ও ফ্যাশন আইটেম। চাম্বল কাঁচা বাজার, বাঁশখালী, চট্টগ্রাম।">
-  <title>Rijvee Elegance | Official Links</title>
+  <meta name="theme-color" content="#19151f">
+
+  <title>Rijvee Elegance | Beauty • Style • Elegance</title>
+
+  <meta name="description" content="Rijvee Elegance — কসমেটিকস, জুয়েলারি, ব্যাগ ও ফ্যাশন লাইফস্টাইল পণ্যের বিশ্বস্ত ঠিকানা।">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
   <style>
     :root {
-      --bg: #06111e;
-      --panel: rgba(14, 29, 46, .92);
-      --line: rgba(55, 208, 229, .30);
-      --cyan: #35d4e8;
-      --blue: #51b8ff;
-      --text: #f4f7fb;
-      --muted: #a8b8ca;
+      --bg: #19151f;
+      --panel: #211b28;
+      --gold: #e8cb8b;
+      --gold-light: #f8e7b9;
+      --text: #f7f0e9;
+      --muted: #d0c6d2;
+      --border: rgba(232, 203, 139, 0.34);
     }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      margin: 0; min-height: 100vh; color: var(--text);
-      background: radial-gradient(ellipse at 50% 0%, #102c45 0%, var(--bg) 55%, #030910 100%);
-      font-family: "Hind Siliguri", "Poppins", sans-serif;
-      padding: 26px 14px 38px;
+      min-height: 100vh;
+      padding: 18px 12px;
+      color: var(--text);
+      background:
+        radial-gradient(ellipse at top, #302536 0%, var(--bg) 48%);
+      font-family: "Noto Sans Bengali", sans-serif;
+      line-height: 1.8;
     }
-    .page { width: 100%; max-width: 590px; margin: 0 auto; }
-    .card {
-      overflow: hidden; border: 1px solid var(--line); border-radius: 28px;
-      background: var(--panel); box-shadow: 0 18px 65px rgba(0,0,0,.24);
-      backdrop-filter: blur(12px);
+
+    a {
+      color: inherit;
+      text-decoration: none;
     }
+
+    .page {
+      width: 100%;
+      max-width: 720px;
+      margin: 0 auto;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 32px;
+      background: rgba(25, 21, 31, 0.96);
+      box-shadow: 0 20px 65px rgba(0, 0, 0, 0.3);
+    }
+
+    /* COVER: সম্পূর্ণ YouTube thumbnail দেখা যাবে */
     .cover {
-      height: 190px; position: relative; overflow: hidden;
-      background: linear-gradient(120deg, rgba(8,20,34,.2), rgba(8,20,34,.55)),
-        url("https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1400&q=85") center 42%/cover;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: #19151f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid var(--border);
     }
-    .cover::after { content:""; position:absolute; inset:0; background:linear-gradient(0deg, rgba(7,19,33,.88), transparent 65%); }
-    .cover-label {
-      position:absolute; z-index:1; left:22px; bottom:17px; letter-spacing:2px;
-      text-transform:uppercase; font:600 11px "Poppins",sans-serif; color:#c5f8ff;
-      border:1px solid rgba(53,212,232,.55); border-radius:99px; padding:7px 12px;
-      background:rgba(4,21,34,.5);
+
+    .cover img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
     }
-    .content { padding: 0 26px 28px; text-align:center; }
-    .avatar-wrap { margin-top:-59px; position:relative; z-index:2; }
-    .avatar {
-      width:116px; height:116px; display:block; margin:0 auto; object-fit:cover;
-      border-radius:50%; border:4px solid var(--cyan); padding:3px; background:#10273b;
-      box-shadow:0 0 0 6px rgba(53,212,232,.08), 0 0 28px rgba(53,212,232,.25);
+
+    .profile-area {
+      position: relative;
+      padding: 18px 24px 0;
     }
-    h1 { font:700 30px "Poppins","Hind Siliguri",sans-serif; margin:17px 0 3px; letter-spacing:-.7px; }
-    .tagline { color:var(--blue); font-weight:700; font-size:16px; margin:0 0 14px; }
-    .bio { color:#d2dce7; line-height:1.8; margin:0 auto 16px; max-width:440px; font-size:15px; }
-    .address {
-      display:flex; justify-content:center; align-items:flex-start; gap:8px;
-      color:var(--muted); font-size:14px; line-height:1.6; margin:0 auto 24px;
+
+    .profile-heading {
+      min-height: 108px;
+      padding-right: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
-    .address i { color:var(--cyan); margin-top:5px; }
-    .links { display:grid; gap:11px; }
-    .link {
-      display:flex; align-items:center; justify-content:center; gap:12px;
-      min-height:58px; padding:13px 16px; border:1px solid rgba(53,212,232,.25);
-      border-radius:17px; background:rgba(5,17,30,.52); color:#e8f0f8;
-      text-decoration:none; font-size:16px; font-weight:600;
-      transition:transform .18s ease, border-color .18s ease, background .18s ease;
+
+    .shop-name {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(26px, 5.5vw, 39px);
+      line-height: 1.3;
+      font-weight: 700;
+      color: var(--gold-light);
     }
-    .link i { width:24px; font-size:21px; color:var(--cyan); }
-    .link:hover, .link:focus-visible { transform:translateY(-2px); border-color:var(--cyan); background:rgba(22,55,76,.7); outline:none; }
-    .note { color:#7f93a9; font-size:12px; line-height:1.7; margin:22px 0 0; }
-    .footer { text-align:center; color:#7f93a9; font:12px "Poppins",sans-serif; padding:18px 8px 0; }
-    .footer span { color:var(--blue); }
-    @media (max-width:420px) {
-      body { padding:16px 10px 26px; }
-      .cover { height:160px; }
-      .content { padding:0 17px 23px; }
-      h1 { font-size:26px; }
-      .link { min-height:55px; font-size:15px; }
+
+    .brand-tag {
+      margin-top: 5px;
+      font-family: "Playfair Display", serif;
+      font-size: 13px;
+      letter-spacing: 2px;
+      color: var(--gold);
+    }
+
+    .profile-photo {
+      position: absolute;
+      top: -62px;
+      right: 28px;
+      width: 140px;
+      height: 140px;
+      padding: 6px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #f8e7b9, #b28b48, #f8e7b9);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    .profile-photo img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--bg);
+    }
+
+    .content {
+      padding: 28px 34px 38px;
+    }
+
+    .tagline {
+      margin: 4px 0 16px;
+      text-align: center;
+      color: var(--gold);
+      font-size: clamp(23px, 5.5vw, 35px);
+      line-height: 1.65;
+      font-weight: 700;
+    }
+
+    .ornament {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      margin: 22px 0 28px;
+      color: var(--gold);
+      font-size: 25px;
+    }
+
+    .ornament::before,
+    .ornament::after {
+      content: "";
+      width: 75px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold));
+    }
+
+    .ornament::after {
+      transform: rotate(180deg);
+    }
+
+    .description {
+      margin: 0 auto 34px;
+      max-width: 570px;
+      text-align: center;
+      color: var(--muted);
+      font-size: clamp(17px, 3.8vw, 23px);
+      line-height: 2.05;
+    }
+
+    .section-card {
+      margin-top: 22px;
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.035),
+        rgba(255, 255, 255, 0.008)
+      );
+    }
+
+    .section-title {
+      margin-bottom: 14px;
+      text-align: center;
+      font-size: 23px;
+      font-weight: 700;
+      color: var(--gold);
+    }
+
+    .address-content {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .address-icon {
+      flex-shrink: 0;
+      width: 66px;
+      height: 66px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      background: rgba(232, 203, 139, 0.08);
+      color: var(--gold);
+      font-size: 27px;
+    }
+
+    .address-label {
+      color: var(--gold);
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .address-text {
+      color: var(--text);
+      font-size: 19px;
+      line-height: 1.8;
+    }
+
+    .map-link {
+      display: inline-block;
+      margin-top: 7px;
+      color: var(--gold);
+      font-size: 15px;
+    }
+
+    .map-link i {
+      margin-left: 4px;
+    }
+
+    .social-links {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .social-btn {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      border-radius: 27px;
+      background: linear-gradient(
+        110deg,
+        rgba(255, 255, 255, 0.035),
+        rgba(255, 255, 255, 0.012)
+      );
+      color: var(--text);
+      font-size: 20px;
+      font-weight: 600;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .social-btn:hover {
+      transform: translateY(-3px);
+      background: rgba(232, 203, 139, 0.1);
+    }
+
+    .social-btn i {
+      width: 36px;
+      text-align: center;
+      color: var(--gold);
+      font-size: 30px;
+    }
+
+    .collection-card {
+      margin-top: 28px;
+      padding: 30px 20px;
+      text-align: center;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: linear-gradient(
+        135deg,
+        rgba(232, 203, 139, 0.09),
+        rgba(255, 255, 255, 0.015)
+      );
+    }
+
+    .collection-icon {
+      margin-bottom: 8px;
+      color: var(--gold);
+      font-size: 31px;
+    }
+
+    .collection-title {
+      margin-bottom: 10px;
+      color: var(--gold-light);
+      font-size: 25px;
+      font-weight: 700;
+    }
+
+    .collection-items {
+      color: var(--gold);
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 2;
+    }
+
+    .collection-description {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    .footer {
+      padding: 26px 12px 30px;
+      text-align: center;
+      color: #a99eae;
+      font-size: 13px;
+    }
+
+    .footer-brand {
+      margin-bottom: 4px;
+      color: var(--gold);
+      font-family: "Playfair Display", serif;
+      font-size: 18px;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 10px 8px;
+      }
+
+      .page {
+        border-radius: 25px;
+      }
+
+      .profile-area {
+        padding: 16px 18px 0;
+      }
+
+      .profile-heading {
+        min-height: 92px;
+        padding-right: 112px;
+      }
+
+      .shop-name {
+        font-size: 27px;
+      }
+
+      .brand-tag {
+        font-size: 10px;
+        letter-spacing: 1.3px;
+      }
+
+      .profile-photo {
+        top: -45px;
+        right: 18px;
+        width: 112px;
+        height: 112px;
+      }
+
+      .content {
+        padding: 20px 18px 28px;
+      }
+
+      .tagline {
+        margin-top: 10px;
+      }
+
+      .description {
+        line-height: 1.95;
+      }
+
+      .section-card {
+        padding: 20px 16px;
+        border-radius: 24px;
+      }
+
+      .address-content {
+        gap: 13px;
+      }
+
+      .address-icon {
+        width: 54px;
+        height: 54px;
+        border-radius: 17px;
+        font-size: 23px;
+      }
+
+      .address-text {
+        font-size: 16px;
+      }
+
+      .social-btn {
+        min-height: 72px;
+        padding: 15px;
+        border-radius: 23px;
+        font-size: 18px;
+      }
+
+      .social-btn i {
+        font-size: 27px;
+      }
+
+      .collection-title {
+        font-size: 22px;
+      }
+
+      .collection-items {
+        font-size: 16px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .social-btn {
+        transition: none;
+      }
     }
   </style>
 </head>
+
 <body>
   <main class="page">
-    <section class="card">
-      <div class="cover" role="img" aria-label="Rijvee Elegance cover photo">
-        <span class="cover-label">Rijvee Elegance • Official</span>
-      </div>
-      <div class="content">
-        <div class="avatar-wrap">
-          <!-- নিজের প্রোফাইল ছবির সরাসরি URL নিচের src-এ বসান -->
-          <img class="avatar" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=400&q=85" alt="Rijvee Elegance profile photo">
-        </div>
-        <h1>Rijvee Elegance</h1>
-        <p class="tagline">আপনার সৌন্দর্য, আপনার স্টাইল ✨</p>
-        <p class="bio">কসমেটিকস আইটেম, জুয়েলারি, ব্যাগসহ নিত্যনতুন ফ্যাশন ও লাইফস্টাইল পণ্য পাবেন আমাদের দোকানে। আপনার পছন্দের জিনিসটি খুঁজে নিতে চলে আসুন!</p>
-        <p class="address"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>চাম্বল কাঁচা বাজার, বাঁশখালী, চট্টগ্রাম</span></p>
 
-        <!-- নিচের # চিহ্নযুক্ত লিংকগুলো আপনার আসল URL/নম্বর দিয়ে পরিবর্তন করুন -->
-        <nav class="links" aria-label="Rijvee Elegance social links">
-          <a class="link" href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i><span>YouTube Channel</span></a>
-          <a class="link" href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i><span>Facebook Page</span></a>
-          <a class="link" href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
-          <a class="link" href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram"></i><span>Telegram Channel</span></a>
-          <a class="link" href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp Channel</span></a>
-          <a class="link" href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp Contact</span></a>
-          <a class="link" href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram"></i><span>Telegram Contact</span></a>
-          <a class="link" href="tel:+8801XXXXXXXXX"><i class="fa-solid fa-phone"></i><span>সরাসরি কল করুন</span></a>
-          <a class="link" href="https://www.google.com/maps/search/?api=1&query=Chambal+Kacha+Bazar+Banshkhali+Chattogram" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-map-location-dot"></i><span>দোকানের লোকেশন</span></a>
-        </nav>
-        <p class="note">অর্ডার ও পণ্যের বিস্তারিত জানতে আমাদের সঙ্গে যোগাযোগ করুন।</p>
+    <!-- COVER PHOTO: YouTube thumbnail ratio 16:9 -->
+    <div class="cover">
+      <img
+        src="https://i.ibb.co/JjBLbYMn/1793279613593.jpg"
+        alt="Rijvee Elegance Cover Photo"
+      >
+    </div>
+
+    <!-- SHOP PROFILE -->
+    <header class="profile-area">
+      <div class="profile-heading">
+        <h1 class="shop-name">Rijvee Elegance</h1>
+        <p class="brand-tag">BEAUTY • STYLE • ELEGANCE</p>
       </div>
-    </section>
-    <div class="footer">Designed for <span>Rijvee Elegance</span></div>
+
+      <div class="profile-photo">
+        <img
+          src="https://i.ibb.co/JjBLbYMn/1793279613593.jpg"
+          alt="Rijvee Elegance Profile"
+        >
+      </div>
+    </header>
+
+    <div class="content">
+
+      <!-- TAGLINE -->
+      <h2 class="tagline">মার্জিত রুচির অনন্য প্রকাশ</h2>
+
+      <div class="ornament" aria-hidden="true">✧</div>
+
+      <!-- SHOP DESCRIPTION -->
+      <p class="description">
+        সৌন্দর্য, আভিজাত্য আর নিজের রুচির এক সুন্দর সমন্বয়।
+        আপনার প্রতিদিনের সাজ ও বিশেষ মুহূর্তকে আরও আকর্ষণীয়
+        করে তুলতে রয়েছে পছন্দের নানা ফ্যাশন ও লাইফস্টাইল পণ্য।
+      </p>
+
+      <!-- ADDRESS CARD -->
+      <section class="section-card">
+        <h2 class="section-title">আমাদের ঠিকানা</h2>
+
+        <div class="address-content">
+          <div class="address-icon">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          </div>
+
+          <div>
+            <p class="address-label">আমাদের শপ</p>
+
+            <p class="address-text">
+              চাম্বল কাঁচা বাজার,<br>
+              বাঁশখালী, চট্টগ্রাম
+            </p>
+
+            <a
+              class="map-link"
+              href="https://www.google.com/maps/search/?api=1&query=Chambal+Kacha+Bazar+Banshkhali+Chattogram+Bangladesh"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              গুগল ম্যাপে লোকেশন দেখুন
+              <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOCIAL & CONTACT BUTTONS -->
+      <nav class="social-links" aria-label="যোগাযোগের মাধ্যম">
+
+        <!-- এখানে আপনার YouTube channel link দিন -->
+        <a
+          class="social-btn"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="YouTube Channel"
+        >
+          <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+          <span>YouTube Channel</span>
+        </a>
+
+        <!-- এখানে আপনার Facebook Page link দিন -->
+        <a
+          class="social-btn"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook Page"
+        >
+          <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+          <span>Facebook Page</span>
+        </a>
+
+        <!-- 8801XXXXXXXXX-এর জায়গায় আপনার WhatsApp নম্বর দিন -->
+        <a
+          class="social-btn"
+          href="https://wa.me/8801XXXXXXXXX"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="WhatsApp Contact"
+        >
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          <span>WhatsApp Contact</span>
+        </a>
+
+        <!-- 8801XXXXXXXXX-এর জায়গায় আপনার ফোন নম্বর দিন -->
+        <a
+          class="social-btn"
+          href="tel:+8801XXXXXXXXX"
+          aria-label="Call Us"
+        >
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          <span>সরাসরি কল করুন</span>
+        </a>
+
+      </nav>
+
+      <!-- COLLECTION DETAILS -->
+      <section class="collection-card">
+        <div class="collection-icon">
+          <i class="fa-solid fa-gem" aria-hidden="true"></i>
+        </div>
+
+        <h2 class="collection-title">আমাদের কালেকশন</h2>
+
+        <p class="collection-items">
+          কসমেটিকস <span aria-hidden="true">✦</span>
+          জুয়েলারি <span aria-hidden="true">✦</span>
+          ব্যাগ
+        </p>
+
+        <p class="collection-description">
+          আপনার পছন্দের পণ্য, ছবি, দাম ও বিস্তারিত জানতে
+          আমাদের সঙ্গে যোগাযোগ করুন।
+          আপনার সৌন্দর্য ও রুচির সঙ্গী
+          <strong>Rijvee Elegance</strong>।
+        </p>
+      </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p class="footer-brand">Rijvee Elegance</p>
+      <p>Beauty • Style • Elegance</p>
+      <p>© <span id="year"></span> Rijvee Elegance. সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
   </main>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
 </body>
 </html>
